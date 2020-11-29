@@ -10,9 +10,10 @@
             <form action="upload.php" method="post" enctype="multipart/form-data">
                 <label for="arquivo">Arquivo:</label> <input type="file" name="arquivo" id="arquivo" />
                 <br>
+                <br />
+            </form>
+            <form action="upload.php" method="get">
                 <label>Insira um nome para sua imagem:  <input type = "text" name = "nomeImagem"/><br></label>
-                <br />
-                <br />
                 <input type="submit" value="Enviar" />
             </form>
         </div>

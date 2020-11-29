@@ -2,6 +2,8 @@
 
 include_once('conexao.php');
 
+$nome_final = 
+
 if (substr($_FILES['arquivo']['name'], -3) == "png" || substr($_FILES['arquivo']['name'], -3) == "jpg") {
     $dir = './arquivos/';
     $tmpName = $_FILES['arquivo']['tmp_name'];
