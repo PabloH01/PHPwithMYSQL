@@ -2,7 +2,7 @@
 
 include_once('conexao.php');
 
-$nome_final = 
+$nome_final = $_GET["nomeImagem"];
 
 if (substr($_FILES['arquivo']['name'], -3) == "png" || substr($_FILES['arquivo']['name'], -3) == "jpg") {
     $dir = './arquivos/';
