@@ -14,12 +14,10 @@
             </form>
             <form action="upload.php" method="get">
                 <label>Insira um nome para sua imagem:  <input type = "text" name = "nomeImagem"/><br></label>
-                <label>PNG<input type="radio" name="selpng"></label>
-                <label>JPG<input type="radio" name="seljpg"></label><br>
+                <label>PNG<input type="radio" name="selpng"><input type="radio" name="seljpg"></label>
                 <input type="submit" value="Enviar" />
             </form>
         </div>
-        <hr>
         <?php
         include_once('conexao.php');
         $sqlstring = 'select * from imagens order by ASC';
