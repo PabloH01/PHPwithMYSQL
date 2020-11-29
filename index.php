@@ -12,9 +12,9 @@
                 <br>
                 <br />
             </form>
-            <form action="upload.php" method="get">
+            <form action="upload.php" method="get" enctype="multipart/form-data">
                 <label>Insira um nome para sua imagem:  <input type = "text" name = "nomeImagem"/><br></label>
-                <label>Digite 1 para uma imagem PNG e 2 caso for JPG<input type = "number" name = "tipoImagem"><label>
+                <label>Digite 1 para uma imagem PNG e 2 caso for JPG<input type = "number" name = "tipoImagem" width= "10%"><label>
                 <br><br>
                 <input type="submit" value="Enviar" />
             </form>
