@@ -20,9 +20,9 @@
         ini_set('display_startup_erros',1);
         error_reporting(E_ALL);
         include_once('conexao.php');
-        $sqlstring = 'select * from imagens order by asc';
         $resultado = mysqli_query($conexao, $sqlstring);
         while ($dados = mysqli_fetch_array($resultado)) {
+            $sqlstring = 'select * from imagens order by asc';
             echo " ". $dados['nomeImagem'];
             echo "<a href='visualizar.php?id=" . $dados['id'] . "'><img src='abrir.png'></a>";
             echo "<a href='apagar.php?id=" . $dados['id'] . "'><img src='delete.png'></a>";
