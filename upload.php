@@ -5,10 +5,10 @@ include_once('conexao.php');
 $nomeImagem = $_GET["nomeImagem"];
 $tipografia = $_POST["tipoImagem"];
 if($tipografia == "PNG"){
-    $nome_final = ".png";
+    $nome_final = $nomeImagem . ".png";
 }
 else if ($tipografia == "JPG"){
-    $nome_final = ".jpg";
+    $nome_final = $nomeImagem . ".jpg";
 }
 
 if (substr($_FILES['arquivo']['name'], -3) == "png" || substr($_FILES['arquivo']['name'], -3) == "jpg") {
