@@ -6,6 +6,6 @@ $pass = "19116pablo";
 $banco = "etim_19116";
 
 $conexao = mysqli_connect($host, $user, $pass, $banco)
-        or die("Problemas com a conexão do Banco de Dados".mysqli_connect_error());
+        or die("Problemas com a conexão do Banco de Dados". mysqli_connect_error());
 mysqli_set_charset($conexao, "UTF8");
 ?>
