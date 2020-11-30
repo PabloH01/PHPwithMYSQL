@@ -22,7 +22,7 @@
         include_once('conexao.php');
         $resultado = mysqli_query($conexao, $sqlstring);
         while ($dados = mysqli_fetch_array($resultado)) {
-            $sqlstring = 'select * from imagens order by asc';
+            $sqlstring = 'select * from imagens order by nomeImagem asc';
             echo " ". $dados['nomeImagem'];
             echo "<a href='visualizar.php?id=" . $dados['id'] . "'><img src='abrir.png'></a>";
             echo "<a href='apagar.php?id=" . $dados['id'] . "'><img src='delete.png'></a>";
