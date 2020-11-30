@@ -10,7 +10,7 @@
             <form action="upload.php" method="post" enctype="multipart/form-data">
                 <label for="arquivo">Arquivo:</label> <input type="file" name="arquivo" id="arquivo" /><br>
                 <label>Insira um nome para sua imagem:  <input type = "text" name = "nomeImagem"/><br></label>
-                <label>Informe se sua imagem é 'PNG' ou 'JPG'<input type = "text" name = "tipoImagem" width= "10px"><label>
+                <label>Informe se sua imagem é 'PNG' ou 'JPG': <input type = "text" name = "tipoImagem" width= "10px"><label>
                 <br><br>
                 <input type="submit" value="Enviar" />
                 <br><br>
