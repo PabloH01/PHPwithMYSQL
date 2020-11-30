@@ -21,8 +21,8 @@
         error_reporting(E_ALL);
         include_once('conexao.php');
         $resultado = mysqli_query($conexao, $sqlstring);
+        $sqlstring = 'select * from imagens order by nomeImagem asc';
         while ($dados = mysqli_fetch_array($resultado)) {
-            $sqlstring = 'select * from imagens order by nomeImagem asc';
             echo " ". $dados['nomeImagem'];
             echo "<a href='visualizar.php?id=" . $dados['id'] . "'><img src='abrir.png'></a>";
             echo "<a href='apagar.php?id=" . $dados['id'] . "'><img src='delete.png'></a>";
