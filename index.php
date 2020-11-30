@@ -26,7 +26,7 @@
             echo "<img src='arquivos/" . $dados['nomeImagem'] . "' width='100px' heigth='100px'>";
             echo "<a href='visualizar.php?id=" . $dados['id'] . "'><img src='abrir.png'></a>";
             echo "<a href='apagar.php?id=" . $dados['id'] . "'><img src='delete.png'></a>";
-            <br>
+            echo "<br>"
         }
         ?>
     </body>
