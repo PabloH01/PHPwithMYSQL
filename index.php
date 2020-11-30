@@ -16,6 +16,9 @@
             </form>
         </div>
         <?php
+        ini_set('display_errors',1);
+        ini_set('display_startup_erros',1);
+        error_reporting(E_ALL);
         include_once('conexao.php');
         $sqlstring = 'select * from imagens order by asc';
         $resultado = mysqli_query($conexao, $sqlstring);
