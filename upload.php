@@ -4,10 +4,10 @@ include_once('conexao.php');
 
 $nomeImagem = $_POST["nomeImagem"];
 $tipografia = $_POST["tipoImagem"];
-if($tipografia == 1){
+if($tipografia == "PNG"){
     $nome_final = ".png";
 }
-else if ($tipografia == 2){
+else if ($tipografia == "JPG"){
     $nome_final = ".jpg";
 }
 
