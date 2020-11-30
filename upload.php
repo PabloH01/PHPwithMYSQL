@@ -2,8 +2,8 @@
 
 include_once('conexao.php');
 
-$nomeImagem = $_GET["nomeImagem"];
-$tipografia = $_GET["tipoImagem"]
+$nomeImagem = $_POST["nomeImagem"];
+$tipografia = $_POST["tipoImagem"]
 if($tipografia == 1){
     $nome_final = ".png";
 }
