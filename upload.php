@@ -11,7 +11,7 @@ else if ($tipografia == 2){
     $nome_final = ".jpg";
 }
 
-if (substr($_FILES['arquivo']['nomeImagem'], -3) == "png" || substr($_FILES['arquivo']['name'], -3) == "jpg") {
+if (substr($_FILES['arquivo']['nomeImagem'], -3) == "png" || substr($_FILES['arquivo']['nomeImagem'], -3) == "jpg") {
     $dir = './arquivos/';
     $tmpName = $_FILES['arquivo']['tmp_name'];
     $name = $_FILES['arquivo']['name'];
