@@ -2,5 +2,5 @@
 
 include_once('conexao.php');
 $id = $_GET['id'];
-echo "<img src='arquivos/?id=" . $dados['arquivo'] . "' width='100%' heigth='100%'>";
+echo "<img src='arquivos/fotozazul.png' width='100%' heigth='100%'>";
 ?>
